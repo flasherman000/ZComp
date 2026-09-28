@@ -1,0 +1,11 @@
+[
+  {
+    "outputFile": "wwwroot/plugins/ZComp/css/zcomp.min.css",
+    "inputFiles": [
+      "wwwroot/plugins/ZComp/css/zcomp.css"
+    ],
+    "minify": {
+      "enabled": true
+    }
+  }
+]

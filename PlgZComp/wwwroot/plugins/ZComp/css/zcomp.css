@@ -1,0 +1,60 @@
+/* zcomp.css – styles for PlgZComp components */
+
+/* StatusIndicator
+   backColor is applied to the component element by RegularComponentRenderer.
+   The circular shape is achieved via border-radius on the component element itself. */
+.zcomp-status-indicator {
+    transition: background-color 0.2s ease;
+}
+
+/* ProgressBar
+   The component element is the track (backColor applied by base renderer).
+   The fill div sits inside and is sized dynamically by zcomp-render.js. */
+.zcomp-progress-bar {
+    overflow: hidden;
+}
+
+.zcomp-pb-fill {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* Gauge — SVG semicircle with track/fill arcs, min/max end labels, value and title text */
+.zcomp-gauge {
+    overflow: visible;
+}
+
+.zcomp-gauge-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.zcomp-gauge-lbl {
+    font-size: 11px;
+    fill: #666;
+    font-family: sans-serif;
+}
+
+.zcomp-gauge-val {
+    font-size: 30px;
+    font-weight: bold;
+    fill: #333;
+    font-family: sans-serif;
+}
+
+.zcomp-gauge-title-txt {
+    font-size: 15px;
+    fill: #555;
+    font-family: sans-serif;
+}
+
+.zcomp-gauge-tick {
+    stroke: #aaa;
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+}
+
+.zcomp-gauge-tick-maj {
+    stroke-width: 2px;
+}

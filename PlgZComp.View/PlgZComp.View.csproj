@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <RootNamespace>Scada.Web.Plugins.PlgZComp.View</RootNamespace>
+    <Authors>Your Name</Authors>
+    <Company>Your Company</Company>
+    <Product>Rapid SCADA</Product>
+    <Copyright>Copyright © 2025</Copyright>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--
+      ScadaCommon and ScadaWebCommon.Subset are required.
+      Adjust HintPaths to your local RapidSCADA build output.
+    -->
+    <Reference Include="ScadaCommon">
+      <HintPath>C:\Program Files\SCADA\ScadaComm\ScadaCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="ScadaWebCommon.Subset">
+      <HintPath>C:\Program Files\SCADA\ScadaAdmin\ScadaWebCommon.Subset.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Import Project="..\PlgZComp.Shared\PlgZComp.Shared.projitems" Label="Shared" />
+
+</Project>
